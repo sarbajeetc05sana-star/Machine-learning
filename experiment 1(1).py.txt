@@ -1,0 +1,21 @@
+import numpy as np
+import pandas as pd
+marks=np.array([72,85,91,68,77])
+print("Marks:",marks)
+print("mean:",np.mean(marks))
+print("maximum:",np.max(marks))
+print("minimum:",np.min(marks))
+data = {
+	"name":["amit","riya","sourav","neha","rahul"],
+	"attendance":[88,92,76,95,81],
+	"marks":[72,85,68,91,77]
+}
+df=pd.DataFrame(data)
+
+print("\n---First five records--")
+print(df.head())
+print("\n--Data Information--")
+print(df.info())
+print("\n--Statistical summary--")
+print(df.describe())
+print("\nAverage marks:",df["Marks"].mean())
